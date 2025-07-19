@@ -1,7 +1,6 @@
 <?php
 //Ejercicio 1
 function generarFibonacci($n) {
-    // Inicializamos el array con los primeros dos números de la serie
     $serie = array();
     
     if ($n >= 1) {
@@ -60,14 +59,13 @@ echo "¿'$palabra' es un palíndromo? $resultado";
 function sumarPares($numeros) {
     $suma = 0;
     foreach ($numeros as $numero) {
-        if ($numero % 2 == 0) {  // Verifica si el número es par
+        if ($numero % 2 == 0) { 
             $suma += $numero;
         }
     }
     return $suma;
 }
 
-// Ejemplo de uso:
 $miArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 $resultado = sumarPares($miArray);
 
